@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 30%;
+  border: 3px solid white;
+  border-radius: 25px;
+}
+.navbar {
+  display: flex;
+  background-color: black;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+.navlist {
+  display: flex;
+
+  align-items: center;
+  width: 65%;
+}
+.navlist li {
+  list-style: none;
+  padding: 26px 36px;
+}
+.navlist li a {
+  text-decoration: none;
+  color: white;
+}
+.navlist li a:hover {
+  color: grey;
+}
+.rightNav {
+  text-align: right;
+}
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 9px;
+}
+.background {
+  background: rgba(0, 0, 0, 0.8) url("back.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.boxMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.firstsection {
+  padding: 13rem 0rem;
+}
+.fHalf {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  width: 50%;
+  justify-content: center;
+}
+
+.sHalf img {
+  height: 10rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.big {
+  font-size: 2rem;
+  padding: 8px;
+}
+.small {
+  font-size: 0.9rem;
+  padding: 8px;
+}
+.btn {
+  background: none;
+  margin-left: 1.5rem;
+  border: 2px solid white;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: white;
+}
+.down {
+  padding: 13rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#fluid {
+  height: 9rem;
+  margin: 1.5rem;
+  border: 2px solid black;
+
+  border-radius: 10px;
+}
+.paraf {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 50%;
+  justify-content: center;
+}
+#para {
+  font-size: 0.9rem;
+  padding: 8px;
+}
+#head {
+  font-size: 2rem;
+  padding: 8px;
+}
+
+.contact {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(198, 200, 235);
+  padding: 5rem;
+}
+.cus {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+}
+.input {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.contact h1 {
+  text-align: center;
+}
+#text {
+  border: 2px solid black;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#subBtn {
+  margin: 1rem;
+  height: 2rem;
+  font-size: 1.4rem;
+  border-radius: 1.7rem;
+  width: 8rem;
+  text-align: center;
+}
+.sub {
+  text-align: center;
+}
+.footer {
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.textFooter {
+  color: white;
+}
+.burger {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 5%;
+}
+.line {
+  background-color: white;
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.3rem 0.3rem;
+}
+@media only screen and (max-width: 1020px) {
+  .navbar {
+    height: 100vh;
+    flex-direction: column;
+    transition: all 0.3s ease;
+  }
+  .logo img {
+    margin-top: 1rem;
+  }
+  .navlist {
+    flex-direction: column;
+  }
+  .rightNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    margin-left: 0rem;
+    width: 50%;
+    margin: 0.5rem;
+  }
+  .burger {
+    display: block;
+  }
+  .v-classRes {
+    opacity: 0;
+  }
+  .seRes {
+    opacity: 0;
+  }
+  .cutRes {
+    height: 70.4px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .firstsection {
+    padding: 23rem 0rem;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .down {
+    padding: 20rem 0rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .firstsection {
+    padding: 33rem 1rem;
+  }
+  .down {
+    padding: 33rem 1.5rem;
+  }
+  #fluid {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .firstsection {
+    overflow: scroll;
+  }
+  .down {
+    overflow: scroll;
+  }
+}
